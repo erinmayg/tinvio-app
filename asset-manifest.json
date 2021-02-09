@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/tinvio-app/static/css/main.2d89dc0b.chunk.css",
+    "main.js": "/tinvio-app/static/js/main.92e318e6.chunk.js",
+    "main.js.map": "/tinvio-app/static/js/main.92e318e6.chunk.js.map",
+    "runtime-main.js": "/tinvio-app/static/js/runtime-main.0e1cb3e3.js",
+    "runtime-main.js.map": "/tinvio-app/static/js/runtime-main.0e1cb3e3.js.map",
+    "static/js/2.da81cd00.chunk.js": "/tinvio-app/static/js/2.da81cd00.chunk.js",
+    "static/js/2.da81cd00.chunk.js.map": "/tinvio-app/static/js/2.da81cd00.chunk.js.map",
+    "static/js/3.753dd4b8.chunk.js": "/tinvio-app/static/js/3.753dd4b8.chunk.js",
+    "static/js/3.753dd4b8.chunk.js.map": "/tinvio-app/static/js/3.753dd4b8.chunk.js.map",
+    "index.html": "/tinvio-app/index.html",
+    "static/css/main.2d89dc0b.chunk.css.map": "/tinvio-app/static/css/main.2d89dc0b.chunk.css.map",
+    "static/js/2.da81cd00.chunk.js.LICENSE.txt": "/tinvio-app/static/js/2.da81cd00.chunk.js.LICENSE.txt",
+    "static/media/close.8cd0992e.svg": "/tinvio-app/static/media/close.8cd0992e.svg",
+    "static/media/icon-24-shop.c0f37b5b.svg": "/tinvio-app/static/media/icon-24-shop.c0f37b5b.svg",
+    "static/media/image.9e56aee3.jpg": "/tinvio-app/static/media/image.9e56aee3.jpg",
+    "static/media/more.b2ee8afe.svg": "/tinvio-app/static/media/more.b2ee8afe.svg",
+    "static/media/phone.0c947226.svg": "/tinvio-app/static/media/phone.0c947226.svg",
+    "static/media/user.29320184.svg": "/tinvio-app/static/media/user.29320184.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0e1cb3e3.js",
+    "static/js/2.da81cd00.chunk.js",
+    "static/css/main.2d89dc0b.chunk.css",
+    "static/js/main.92e318e6.chunk.js"
+  ]
+}
