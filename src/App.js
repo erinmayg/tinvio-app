@@ -4,6 +4,7 @@ import './App.css';
 import UserProfile from './components/UserProfile';
 import UserPosts from './components/UserPosts';
 import ViewUsers from './components/ViewUsers';
+import ViewPost from './components/ViewPost';
 import { ReactComponent as MoreButton } from './assets/more.svg';
 import { ReactComponent as CloseButton } from './assets/close.svg';
 
@@ -12,6 +13,7 @@ function App() {
 
   const [user, setUser] = useState([]);
   const [showMore, setShowMore] = useState(false);
+  const [post, setPost] = useState(null);
 
   useEffect(() => {
     async function getUser() {
@@ -26,12 +28,15 @@ function App() {
   }, []);
 
   return (
-    <div className={'App ' + (showMore ? 'hide-overflow' : '')}>
-      <UserProfile user={user} />
-      <UserPosts user={user} />
+    <div className={'App ' + (showMore || post ? 'hide-overflow' : '')}>
+      <div className='grid'>
+        <UserProfile user={user} />
+        <UserPosts user={user} setPost={setPost} />
+      </div>
       {showMore && <ViewUsers setShowMore={setShowMore} setUser={setUser} />}
       {!showMore && <MoreButton onClick={() => setShowMore(true)} />}
       {showMore && <CloseButton onClick={() => setShowMore(false)} />}
+      {post && <ViewPost setPost={setPost} post={post} />}
     </div>
   );
 }

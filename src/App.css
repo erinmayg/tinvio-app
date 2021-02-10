@@ -4,6 +4,7 @@
   box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: auto;
+  transition: color 0.3s ease;
 }
 
 :root {
@@ -16,15 +17,19 @@
   justify-content: center;
   background-color: whitesmoke;
   height: 100vh;
+  padding: 1rem;
   overflow: hidden;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100vw;
+}
+
 .container {
-  display: block;
-  margin: 1rem;
   background-color: white;
-  width: 50%;
-  height: 70%;
+  margin: 1rem;
   border: 1px solid lightgray;
   border-radius: var(--border-radius);
   text-align: left;
@@ -32,16 +37,12 @@
 }
 
 .header {
-  height: 30%;
+  border-radius: var(--border-radius) var(--border-radius) 0px 0px;
   border-bottom: 1px solid lightgray;
   overflow: hidden;
-}
-
-.header img {
   object-fit: cover;
   width: 100%;
-  height: 100%;
-  border-radius: var(--border-radius) var(--border-radius) 0px 0px;
+  max-height: 200px;
 }
 
 .profile-data {
@@ -85,12 +86,7 @@
   width: 100%;
   height: 300px;
   flex-grow: 0;
-}
-
-.posts .container {
-  padding: 1rem 2rem;
-  width: 95%;
-  margin: 0rem;
+  padding: 1rem;
 }
 
 .posts h1 {
@@ -112,9 +108,15 @@
   border: 1px solid lightgray;
   border-radius: var(--border-radius);
   text-align: left;
-  overflow: hidden;
   white-space: nowrap;
   overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.post-container:hover {
+  border: 2px solid salmon;
+  transform: scale(1.01);
 }
 
 .post-container h1 {
@@ -135,17 +137,24 @@
   height: 50px;
   margin: 2rem;
   cursor: pointer;
+  opacity: 0.5;
 }
 
-.moreButton:hover {
+.moreButton {
   color: salmon;
 }
 
-.closeButton:hover {
+.closeButton {
   color: red;
 }
 
-.viewUsers {
+.moreButton:hover,
+.closeButton:hover {
+  opacity: 1;
+}
+
+.viewUsers,
+.viewPost {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.8);
@@ -156,12 +165,25 @@
   justify-content: center;
 }
 
-.viewUsers .container {
+.viewUsers .container,
+.viewPost .container {
   background-color: white;
   border-radius: var(--border-radius);
   padding: 1rem;
+  height: auto;
   max-height: 80%;
   overflow-y: auto;
+}
+
+.viewUsers .container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-overflow: ellipsis;
+}
+
+.viewPost .container {
+  padding: 2rem 4rem;
+  width: 50%;
 }
 
 .viewUsers .user {
@@ -171,6 +193,8 @@
   justify-content: center;
   padding: 1rem;
   cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .viewUsers .user:hover {
@@ -186,6 +210,27 @@
 .viewUsers .user p {
   font-weight: 600;
   font-size: 1.2rem;
+  text-overflow: ellipsis;
+}
+
+.viewPost {
+  display: flex;
+  flex-direction: column;
+}
+
+.viewPost p {
+  margin: 1rem 0rem;
+}
+
+.viewPost svg {
+  width: 50px;
+  height: 50px;
+  float: left;
+  cursor: pointer;
+}
+
+.viewPost svg:hover {
+  color: salmon;
 }
 
 @media screen and (max-width: 768px) {
@@ -194,6 +239,10 @@
     overflow: auto;
     padding: 1rem;
     height: auto;
+  }
+
+  .grid {
+    grid-template-columns: auto;
   }
 
   .hide-overflow {
@@ -207,7 +256,16 @@
     margin: 1rem;
   }
 
+  .viewUsers .container {
+    grid-template-columns: auto;
+  }
+
   .viewUsers .user {
     flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .viewPost .container {
+    width: 100%;
   }
 }

@@ -21,9 +21,7 @@ function UserProfile({ user }) {
 
   return (
     <div className='container'>
-      <div className='header'>
-        <img src={header} alt='header' />
-      </div>
+      <img className='header' src={header} alt='header' />
       <div className='profile-data'>
         <h1>{user?.name}</h1>
         <div className='user-info'>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Post from './Post';
 
-function UserPosts({ user }) {
+function UserPosts(props) {
   const [posts, setPosts] = useState([]);
 
   const baseURL = 'https://jsonplaceholder.typicode.com/posts?userId=';
@@ -10,7 +10,7 @@ function UserPosts({ user }) {
   useEffect(() => {
     async function getPosts() {
       try {
-        const response = await axios.get(baseURL + user?.id);
+        const response = await axios.get(baseURL + props.user?.id);
         setPosts(Object.values(response)[0]);
       } catch (error) {
         console.error(error);
@@ -22,11 +22,11 @@ function UserPosts({ user }) {
   return (
     <div className='container'>
       <div className='posts-content'>
-        <h1>{user?.name?.split(' ')[0]}'s Posts</h1>
+        <h1>{props.user?.name?.split(' ')[0]}'s Posts</h1>
         <h2>{posts.length} Posts</h2>
         <div className='posts'>
           {posts.map((post, i) => {
-            return <Post title={post.title} body={post.body} />;
+            return <Post key={i} post={post} setPost={props.setPost} />;
           })}
         </div>
       </div>

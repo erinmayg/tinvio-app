@@ -1,12 +1,17 @@
 import React from 'react';
 
-function Post({ title, body }) {
+function Post({ post, setPost }) {
   return (
-    <div className='post-container'>
+    <div
+      className='post-container'
+      onClick={() => {
+        setPost(post);
+      }}
+    >
       <div className='title'>
-        <h1>{title.charAt(0).toUpperCase() + title.substring(1)}</h1>
+        <h1>{post.title.charAt(0).toUpperCase() + post.title.substring(1)}</h1>
       </div>
-      <p>{body.charAt(0).toUpperCase() + body.substring(1)}</p>
+      <p>{post.body.charAt(0).toUpperCase() + post.body.substring(1)}</p>
     </div>
   );
 }
