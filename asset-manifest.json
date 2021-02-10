@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/tinvio-app/static/css/main.78bc49b2.chunk.css",
-    "main.js": "/tinvio-app/static/js/main.eb484540.chunk.js",
-    "main.js.map": "/tinvio-app/static/js/main.eb484540.chunk.js.map",
-    "runtime-main.js": "/tinvio-app/static/js/runtime-main.0e1cb3e3.js",
-    "runtime-main.js.map": "/tinvio-app/static/js/runtime-main.0e1cb3e3.js.map",
-    "static/js/2.b276041b.chunk.js": "/tinvio-app/static/js/2.b276041b.chunk.js",
-    "static/js/2.b276041b.chunk.js.map": "/tinvio-app/static/js/2.b276041b.chunk.js.map",
-    "static/js/3.753dd4b8.chunk.js": "/tinvio-app/static/js/3.753dd4b8.chunk.js",
-    "static/js/3.753dd4b8.chunk.js.map": "/tinvio-app/static/js/3.753dd4b8.chunk.js.map",
+    "main.js": "/tinvio-app/static/js/main.c20742d5.chunk.js",
+    "main.js.map": "/tinvio-app/static/js/main.c20742d5.chunk.js.map",
+    "runtime-main.js": "/tinvio-app/static/js/runtime-main.685e2110.js",
+    "runtime-main.js.map": "/tinvio-app/static/js/runtime-main.685e2110.js.map",
+    "static/js/2.22e20f60.chunk.js": "/tinvio-app/static/js/2.22e20f60.chunk.js",
+    "static/js/2.22e20f60.chunk.js.map": "/tinvio-app/static/js/2.22e20f60.chunk.js.map",
+    "static/js/3.c02fefe0.chunk.js": "/tinvio-app/static/js/3.c02fefe0.chunk.js",
+    "static/js/3.c02fefe0.chunk.js.map": "/tinvio-app/static/js/3.c02fefe0.chunk.js.map",
     "index.html": "/tinvio-app/index.html",
     "static/css/main.78bc49b2.chunk.css.map": "/tinvio-app/static/css/main.78bc49b2.chunk.css.map",
-    "static/js/2.b276041b.chunk.js.LICENSE.txt": "/tinvio-app/static/js/2.b276041b.chunk.js.LICENSE.txt",
+    "static/js/2.22e20f60.chunk.js.LICENSE.txt": "/tinvio-app/static/js/2.22e20f60.chunk.js.LICENSE.txt",
     "static/media/back.f24fe56b.svg": "/tinvio-app/static/media/back.f24fe56b.svg",
     "static/media/close.21520637.svg": "/tinvio-app/static/media/close.21520637.svg",
     "static/media/icon-24-shop.c0f37b5b.svg": "/tinvio-app/static/media/icon-24-shop.c0f37b5b.svg",
@@ -21,9 +21,9 @@
     "static/media/user.f489dd39.svg": "/tinvio-app/static/media/user.f489dd39.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0e1cb3e3.js",
-    "static/js/2.b276041b.chunk.js",
+    "static/js/runtime-main.685e2110.js",
+    "static/js/2.22e20f60.chunk.js",
     "static/css/main.78bc49b2.chunk.css",
-    "static/js/main.eb484540.chunk.js"
+    "static/js/main.c20742d5.chunk.js"
   ]
 }
