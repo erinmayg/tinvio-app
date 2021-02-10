@@ -14,12 +14,15 @@ function App() {
   const [user, setUser] = useState([]);
   const [showMore, setShowMore] = useState(false);
   const [post, setPost] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function getUser() {
       try {
-        const response = await axios.get(baseURL + '1');
-        setUser(Object.values(response)[0]);
+        await axios
+          .get(baseURL + '1')
+          .then((res) => setUser(Object.values(res)[0]));
+        setLoading(false);
       } catch (error) {
         console.error(error);
       }
@@ -30,7 +33,7 @@ function App() {
   return (
     <div className={'App ' + (showMore || post ? 'hide-overflow' : '')}>
       <div className='grid'>
-        <UserProfile user={user} />
+        <UserProfile user={user} isLoading={loading} />
         <UserPosts user={user} setPost={setPost} />
       </div>
       {showMore && <ViewUsers setShowMore={setShowMore} setUser={setUser} />}
