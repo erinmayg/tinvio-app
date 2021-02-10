@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tinvio-app/static/css/main.25e72e18.chunk.css",
+    "main.css": "/tinvio-app/static/css/main.78bc49b2.chunk.css",
     "main.js": "/tinvio-app/static/js/main.eb484540.chunk.js",
     "main.js.map": "/tinvio-app/static/js/main.eb484540.chunk.js.map",
     "runtime-main.js": "/tinvio-app/static/js/runtime-main.0e1cb3e3.js",
@@ -10,7 +10,7 @@
     "static/js/3.753dd4b8.chunk.js": "/tinvio-app/static/js/3.753dd4b8.chunk.js",
     "static/js/3.753dd4b8.chunk.js.map": "/tinvio-app/static/js/3.753dd4b8.chunk.js.map",
     "index.html": "/tinvio-app/index.html",
-    "static/css/main.25e72e18.chunk.css.map": "/tinvio-app/static/css/main.25e72e18.chunk.css.map",
+    "static/css/main.78bc49b2.chunk.css.map": "/tinvio-app/static/css/main.78bc49b2.chunk.css.map",
     "static/js/2.b276041b.chunk.js.LICENSE.txt": "/tinvio-app/static/js/2.b276041b.chunk.js.LICENSE.txt",
     "static/media/back.f24fe56b.svg": "/tinvio-app/static/media/back.f24fe56b.svg",
     "static/media/close.21520637.svg": "/tinvio-app/static/media/close.21520637.svg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.0e1cb3e3.js",
     "static/js/2.b276041b.chunk.js",
-    "static/css/main.25e72e18.chunk.css",
+    "static/css/main.78bc49b2.chunk.css",
     "static/js/main.eb484540.chunk.js"
   ]
 }
