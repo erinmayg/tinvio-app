@@ -9,6 +9,9 @@ To run the application simply click [here](https://erinmayg.github.io/tinvio-app
 - [x] Mobile responsiveness
 - [x] Host the website for preview
 
+## Additional Features
+- [x] Able to view post in fullscreen
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
