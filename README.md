@@ -1,3 +1,14 @@
+# Tinvio App
+
+To run the application simply click [here](https://erinmayg.github.io/tinvio-app)
+
+## Optional Tasks
+- [x] Use React/TypeScript in implementation 
+- [x] Add a visual loader when data is loading
+- [x] Add UI to allow to switch between users in the list
+- [x] Mobile responsiveness
+- [x] Host the website for preview
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
